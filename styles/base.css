@@ -1,0 +1,275 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Lato', Arial, sans-serif;
+    background: #f4f4f9;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #2a4365;
+    color: #fff;
+    padding: 2rem 0 0.5rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+header span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav {
+    background: #000;
+    width: 100%;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* Spread out the links */
+    width: 100%;
+    /* max-width: 1100px; */
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 2rem;
+    /* Add horizontal padding for spacing */
+}
+
+nav li {
+    flex: 1;
+    /* Each link takes equal space */
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #90cdf4;
+    color: #2a4365;
+    box-shadow: 0 2px 8px rgba(144, 205, 244, 0.3);
+}
+
+/* Main Layout */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Web Dev Resources Card (left, larger) */
+.web-resources {
+    background: #e2e8f0;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.web-resources .section-header {
+    background: #2a4365;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.web-resources .resources-content {
+    padding: 1.5rem;
+    flex: 1;
+    width: 100%;
+}
+
+.web-resources ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.web-resources li {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+}
+
+.web-resources a {
+    color: #2a4365;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.web-resources a:hover {
+    color: #1a202c;
+}
+
+/* About Me Card (right, smaller) */
+.about-me {
+    background: #e2e8f0;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+}
+
+.about-me .section-header {
+    background: #2a4365;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-me .about-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-top {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-top .about-text {
+    flex: 2;
+}
+.about-top img {
+    flex: 1;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(42,67,101,0.08);
+}
+
+.about-bottom {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.about-bottom .flag-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.about-bottom .flag-section img {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.about-bottom .flag-section span {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.about-bottom .country-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.about-bottom .country-details h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    text-decoration: underline;
+    color: #2a4365;
+}
+.about-bottom .country-details p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #2a4365;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .about-top, .about-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-me, .web-resources {
+        margin-bottom: 2rem;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header, main, footer {
+        padding: 0.75rem;
+    }
+    nav ul {
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main {
+        padding: 0.5rem;
+    }
+    body {
+        font-size: 0.98rem;
+    }
+}
