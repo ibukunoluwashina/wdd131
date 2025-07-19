@@ -1,6 +1,5 @@
 :root {
     --usa-blue: #3c3b6e;
-    --usa-red: #b22234;
     --usa-white: #fff;
     --usa-gray: #f4f4f4;
     --usa-dark: #222;
@@ -97,6 +96,6 @@ footer {
 
 /* Weather icon pseudo-element for mobile (hidden) */
 .weather h2::after {
-    content: "";
-    display: none;
+    content: "⛅";
+    /* display: none; */
 }
