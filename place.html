@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Week 3 Assignment</title>
+    <meta name="description" content="WDD 131 - Week 3 Assignment | Place ">
+    <meta name="author" content="Oluwashina Samuel Ibukun">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>United State</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-image-small.webp" alt="hero image" width="500" height="250">
+            </picture>
+            <div class="data">
+                <h2>Data</h2>
+                <p>Area: <span id="area">9,833,520 km²</span></p>
+                <p>Population: <span id="population">334 million</span></p>
+                <p>Capital: <span id="capital">Washington, D.C.</span></p>
+                <p>Language: <span id="language">English</span></p>
+                <p>Currency: <span id="currency">United States Dollar (USD)</span></p>
+                <p>Time Zone: <span id="timezone">UTC-4 to UTC-12, UTC+10, UTC+11</span></p>
+                <p>Calling Code: <span id="callingcode">+1</span></p>
+                <p>Internet TLD: <span id="tld">.us</span></p>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Condition: <span id="condition"></span></p>
+                <p>Wind: <span id="wind"></span></p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Samuel O. Ibukun, USA.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
