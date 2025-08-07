@@ -27,6 +27,7 @@ main {
     max-width: 600px;
     margin: auto;
     box-sizing: border-box;
+    
 }
 
 form.wf1 fieldset {
@@ -40,6 +41,10 @@ legend {
     font-weight: bold;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+}
+
+.review p{
+    text-align: center;
 }
 
 .form-group {
