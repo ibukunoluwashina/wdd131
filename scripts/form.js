@@ -28,15 +28,29 @@ const products = [
 
 document.addEventListener("DOMContentLoaded", () => {
   const select = document.getElementById("product");
+  const infoContainer = document.getElementById("product-info");
 
-  products.forEach((product) => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    select.appendChild(option);
-  });
+  // Populate dropdown
+  if (select) {
+    products.forEach((product) => {
+      const option = document.createElement("option");
+      option.value = product.id;
+      option.textContent = product.name;
+      select.appendChild(option);
+    });
 
-  // Track review count on review.html
+    // Display average rating when a product is selected
+    select.addEventListener("change", (e) => {
+      const selectedProduct = products.find((p) => p.id === e.target.value);
+      if (selectedProduct) {
+        infoContainer.innerHTML = `<p><strong>Average Rating:</strong> ${selectedProduct.averagerating}</p>`;
+      } else {
+        infoContainer.innerHTML = "";
+      }
+    });
+  }
+
+  // Show review count on review.html
   if (window.location.pathname.includes("review.html")) {
     let reviewCount = localStorage.getItem("reviewCount") || 0;
     reviewCount++;
@@ -47,4 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(counterDisplay);
   }
 });
-
