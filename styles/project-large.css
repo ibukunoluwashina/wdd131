@@ -1,0 +1,122 @@
+@media screen and (min-width: 700px) {
+  main{
+    max-width: 1100px;
+    padding: 2rem;
+    background: var(--usa-white);
+  }
+
+  .home {
+    display: grid;
+      /* grid-template-columns: 1fr 1fr; */
+      grid-template-rows: 500px;
+      gap: 2rem;
+      position: relative;
+  }
+
+  .hero {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(60, 59, 110, 0.08);
+    background: #e6e6e6;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+
+    .navigation {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      background: transparent;
+      width: auto;
+      justify-content: flex-end;
+      gap: 5rem;
+      padding: 0.5rem 1rem 0.5rem 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    #menu {
+      display: none;
+    }
+
+  .data {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 320px;
+    background: rgba(60, 59, 110, 0.95);
+    color: #fff;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(60, 59, 110, 0.08);
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  .location {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    /* <-- changed from left to right */
+    width: 320px;
+    background: rgba(60, 59, 110, 0.95);
+    color: #fff;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(60, 59, 110, 0.08);
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  .location h2::after {
+    font-size: 2rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .data span,
+  .location span {
+    color: #fff;
+    /* Ensure spans are white for contrast */
+    font-weight: 600;
+  }
+
+  /* recipes page */
+  #recipes {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+  figure img {
+    max-width: 100%;
+  }
+
+  /* Quick Meal */
+.quick-meal h1 {
+  font-size: 2rem;
+}
+
+
+/* FORM */
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  max-width: 100%;
+}
+
+.rating-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+}

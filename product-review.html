@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Project</title>
+    <meta name="description" content="WDD 131 - Project" />
+    <meta name="author" content="Oluwashina Samuel Ibukun" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/project.css" />
+    <link rel="stylesheet" href="styles/project-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Quick Recipes</h1>
+      <a id="menu" href="#"></a>
+      <nav>
+        <ul class="navigation">
+          <li><a href="project.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="quick-meal.html">Quick Meal</a></li>
+          <li><a href="product-review.html">Product Review</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="form">
+        <form method="get" action="recipe-review.html" class="wf1">
+          <fieldset>
+            <legend>Product Review</legend>
+
+            <!-- Product Name -->
+            <div class="form-group">
+              <label for="product">Product Name</label>
+              <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+                <option value="Overnight Oats">
+                Overnight Oats
+                </option>
+                <option value="Veggie Omelette">
+                Veggie Omelette
+                </option>
+                <option value="Quinoa Salad">
+                Quinoa Salad
+                </option>
+                <option value="Avocado Chicken Wrap">Avocado Chicken Wrap</option>
+                <option value="Lentil Soup">Lentil Soup</option>
+                <option value="Zucchini Noodles with Pesto">Zucchini Noodles with Pesto</option>
+                <option value="Black Bean Tacos">Black Bean Tacos</option>
+                <option value="Air-Popped Popcorn">
+                Air-Popped Popcorn
+                </option>
+                <option value="Frozen Banana Bites">
+                    Frozen Banana Bites
+                </option>
+              </select>
+            </div>
+
+            <!-- Overall Rating -->
+            <div class="form-group rating-group">
+              <label>Overall Rating</label>
+              <div class="rating-options">
+                <div class="rating-option">
+                  <label for="star1" class="star-label">★</label>
+                  <input
+                    type="radio"
+                    id="star1"
+                    name="rating"
+                    value="1"
+                    required
+                  />
+                </div>
+                <div class="rating-option">
+                  <label for="star2" class="star-label">★★</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                </div>
+                <div class="rating-option">
+                  <label for="star3" class="star-label">★★★</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                </div>
+                <div class="rating-option">
+                  <label for="star4" class="star-label">★★★★</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                </div>
+                <div class="rating-option">
+                  <label for="star5" class="star-label">★★★★★</label>
+                  <input type="radio" id="star5" name="rating" value="5" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Date of Installation -->
+            <div class="form-group">
+              <label for="installDate">Date of Installation</label>
+              <input type="date" id="installDate" name="installDate" required />
+            </div>
+
+            <!-- Useful Features -->
+            <div class="form-group features-group">
+              <label>Which features did you find useful in the product?</label>
+              <label><span class="note">(Check all that apply)</span></label>
+              <div class="features-options">
+                <label for="durable">
+                  <input
+                    type="checkbox"
+                    id="durable"
+                    name="features"
+                    value="Durable"
+                  />
+                Aroma
+                </label>
+                <label for="ease">
+                  <input
+                    type="checkbox"
+                    id="ease"
+                    name="features"
+                    value="Ease of Use"
+                  />
+                Flavor Depth
+                </label>
+                <label for="performance">
+                  <input
+                    type="checkbox"
+                    id="performance"
+                    name="features"
+                    value="Performance"
+                  />
+                Spiciness Level
+                </label>
+                <label for="design">
+                  <input
+                    type="checkbox"
+                    id="design"
+                    name="features"
+                    value="Design"
+                  />
+                Versatility
+                </label>
+              </div>
+            </div>
+
+            <!-- Written Review -->
+            <div class="form-group">
+              <label for="review">Written Review (Optional)</label>
+              <textarea
+                id="review"
+                name="review"
+                rows="5"
+                cols="50"
+                placeholder="Enter your review here..."
+              ></textarea>
+            </div>
+
+            <!-- Your Name -->
+            <div class="form-group">
+              <label for="fname">Your Name (Optional)</label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+
+            <!-- Submit -->
+            <div class="form-group">
+              <input type="submit" value="Post Review" class="submit-btn" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Samuel O. Ibukun, USA.</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

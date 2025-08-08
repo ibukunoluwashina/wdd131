@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Project</title>
+    <meta name="description" content="WDD 131 - Project">
+    <meta name="author" content="Oluwashina Samuel Ibukun">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Quick Recipes</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="quick-meal.html">Quick Meal</a></li>
+                <li><a href="product-review.html">Product Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="home">
+        <div class="hero">
+            <picture>
+                <source srcset="images/quick-recipe-hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/quick-recipe-hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/quick-recipe-hero-small.webp" alt="hero image" width="500" height="250">
+            </picture>
+            <div class="data">
+                <h2>What We Do</h2>
+                <p>We share quick and healthy recipes for busy people.</p>
+                <p>Find simple meal ideas for breakfast, lunch, dinner, and snacks.</p>
+                <p>Each recipe comes with step-by-step instructions, photos, and nutrition info.</p>
+                <p>We also offer tips for meal prep and eating well on a budget.</p>
+            </div>
+            <div class="location">
+                <h2>📍 Location</h2>
+                <p>Place: <span id="place">New York City, NY</span></p>
+                <p>Opening Hours: <span id="hours">Mon - Fri, 8:00 AM - 6:00 PM</span></p>
+                <p>Region: <span id="region">United States</span></p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Samuel O. Ibukun, USA.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
